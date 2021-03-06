@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blur_background"
+        tools:context=".settings.SettingsActivity">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:fontFamily="@font/helvetica_neue_light"
+            android:text="@string/settings"
+            android:textAlignment="center"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/text_channels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@drawable/options_states"
+            android:drawableLeft="@drawable/ic_channel_icon"
+            android:fontFamily="@font/helvetica_neue_light"
+            android:padding="@dimen/_2sdp"
+            android:text="  Channels"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.91"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:id="@+id/account"
+                android:layout_width="@dimen/_76sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:background="@drawable/layout_focus2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_2sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:contentDescription="@string/account"
+                    android:src="@drawable/ic_noun_account" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:text="@string/account"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/_7ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/register_device"
+                android:layout_width="@dimen/_76sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:background="@drawable/layout_focus2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_2sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:contentDescription="@string/register_device"
+                    android:src="@drawable/ic_register_devices" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:text="@string/register_device"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/_7ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/support"
+                android:layout_width="@dimen/_76sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:background="@drawable/layout_focus2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_2sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:contentDescription="@string/support"
+                    android:src="@drawable/ic_noun_support" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:text="@string/support"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/_7ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/privacy"
+                android:layout_width="@dimen/_76sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:background="@drawable/layout_focus2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_2sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:contentDescription="@string/privacy"
+                    android:src="@drawable/ic_noun_policies" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:text="@string/privacy"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/_7ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sign_out"
+                android:layout_width="@dimen/_76sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:background="@drawable/layout_focus2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_2sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:contentDescription="@string/sign_out"
+                    android:src="@drawable/ic_noun_sign_out" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:text="@string/sign_out"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/_7ssp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

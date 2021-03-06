@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/_3sdp">
+
+
+    <LinearLayout
+        android:id="@+id/channel_layout"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/layout_focus">
+
+
+        <ImageView
+            android:id="@+id/channel_logo"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:src="@drawable/ic_noun_account"
+            android:contentDescription="@string/account"/>
+
+        <TextView
+            android:id="@+id/channel_name"
+            android:layout_width="@dimen/_119sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:paddingLeft="@dimen/_6sdp"
+            android:text="@string/account"
+            android:gravity="bottom|left"
+            android:fontFamily="@font/helvetica_neue_light"
+            android:textColor="@color/md_white_1000"
+            android:background="@drawable/search_text_background"
+            android:textSize="@dimen/_8ssp" />
+    </LinearLayout>
+
+</LinearLayout>

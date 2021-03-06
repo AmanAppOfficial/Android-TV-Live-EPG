@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.streamly.TVApp.streamly">
+
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.software.leanback" android:required="true" /> <!-- Used for loading the channel images with Glide -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="false"
+        android:banner="@drawable/resized"
+        android:icon="@drawable/app_icon_tv"
+        android:label="@string/app_name"
+        android:logo="@drawable/app_icon_tv"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
+        <activity android:name="com.streamly.TVApp.streamly.QRCode.QRCodeActivity"></activity>
+        <activity android:name="com.streamly.TVApp.streamly.search_channels.SearchActivity" />
+        <activity android:name="com.streamly.TVApp.streamly.playervideo.PlayerActivity"></activity>
+        <!--
+        <activity
+            android:name=".MainActivity"
+            android:banner="@mipmap/streamly_logo"
+            android:icon="@mipmap/streamly_logo"
+            android:label="@string/app_name"
+            android:logo="@drawable/tv_app_icon"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name="com.streamly.TVApp.streamly.settings.SettingsActivity"
+            android:windowSoftInputMode="stateAlwaysVisible" /> <!-- <activity android:name=".channel_page.ChannelActivity" > -->
+        <!--  -->
+        <!-- </activity> -->
+        <activity android:name="com.streamly.TVApp.streamly.log_in.LogInActivity" />
+        <activity
+            android:name="com.streamly.TVApp.streamly.splash.SplashActivity"
+            android:banner="@drawable/app_icon_tv"
+            android:icon="@drawable/app_icon_tv"
+            android:logo="@drawable/app_icon_tv">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.streamly.TVApp.streamly.MainActivity" />
+    </application>
+
+</manifest>

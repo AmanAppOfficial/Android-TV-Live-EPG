@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Streamly TV</string>
+    <string name="sign_in">Sign In</string>
+    <string name="signIn">Sign in</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register_account">Don\'t have an account?</string>
+    <string name="remember">Remember me</string>
+    <string name="register_now">Register Now</string>
+    <string name="need_help">Need Help?</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings">Settings</string>
+    <string name="account">Account</string>
+    <string name="register_device">Registered Devices</string>
+    <string name="support">Support</string>
+    <string name="privacy"><![CDATA[Privacy & Policy]]></string>
+    <string name="sign_out">Sign Out</string>
+    <string name="log_out">Log Out</string>
+    <string name="ok">Ok</string>
+
+    <!--todo: profile screen strings-->
+    <string name="username_profile">Username:</string>
+    <string name="password_profile">Password:</string>
+    <string name="version">Version:</string>
+    <string name="build_date">Build Date:</string>
+    <string name="model_name">Device Model</string>
+    <string name="support_text">For Help and Support You can call us on below numbers.</string>
+    <string name="number_one">+1-548965-51 (24*7)</string>
+    <string name="number_two">+1-1800-815065-00</string>
+    <string name="privacy_right">Privacy &amp; Policies</string>
+    <string name="policy">Policies</string>
+    <string name="sure_signout">Are you sure you want to logout from this device?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="continuee">Continue</string>
+
+
+    <string name="programguide_title_no_program">No broadcast</string>
+    <string name="programguide_error_fetching_content">Unable to display content. Please try again later.</string>
+
+    <string name="programguide_day_yesterday">Yesterday</string>
+    <string name="programguide_day_today">Today</string>
+    <string name="programguide_day_tomorrow">Tomorrow</string>
+
+    <string name="programguide_part_of_day_morning">Morning</string>
+    <string name="programguide_part_of_day_afternoon">Afternoon</string>
+    <string name="programguide_part_of_day_evening">Evening</string>
+
+    <string name="programguide_button_jump_to_live">Jump to live</string>
+
+    <string name="programguide_day_selector_title">Select the desired day</string>
+    <string name="programguide_day_time_selector_title">Select the desired time of day</string>
+    <string name="channels"> Channels</string>
+    <string name="email">Email</string>
+    <string name="all">All</string>
+    <string name="comedy">Comedy</string>
+    <string name="sports">Sports</string>
+    <string name="news">News</string>
+    <string name="movies">Movies</string>
+    <string name="Kids">Kids</string>
+
+    <string name="test">Notice the embedded tabs and extra spaces mixed into the middle of the output.
+        It looks pretty rough. We can do better if we start by removing any common whitespace prefix from all of the lines in the sample text.
+        This allows us to use docstrings or embedded multi-line strings straight from our Python code while removing the formatting of the code itself.
+        The sample string has an artificial indent level introduced for illustrating this feature.
+    Notice the embedded tabs and extra spaces mixed into the middle of the output.
+        It looks pretty rough. We can do better if we start by removing any common whitespace prefix from all of the lines in the sample text.
+        This allows us to use docstrings or embedded multi-line strings straight from our Python code while removing the formatting of the code itself.
+        The sample string has an artificial indent level introduced for illustrating this feature.
+    Notice the embedded tabs and extra spaces mixed into the middle of the output.
+        It looks pretty rough. We can do better if we start by removing any common whitespace prefix from all of the lines in the sample text.
+        This allows us to use docstrings or embedded multi-line strings straight from our Python code while removing the formatting of the code itself.
+        The sample string has an artificial indent level introduced for illustrating this feature.
+    Notice the embedded tabs and extra spaces mixed into the middle of the output.
+        It looks pretty rough. We can do better if we start by removing any common whitespace prefix from all of the lines in the sample text.
+        This allows us to use docstrings or embedded multi-line strings straight from our Python code while removing the formatting of the code itself.
+        The sample string has an artificial indent level introduced for illustrating this feature.
+    Notice the embedded tabs and extra spaces mixed into the middle of the output.
+        It looks pretty rough. We can do better if we start by removing any common whitespace prefix from all of the lines in the sample text.
+        This allows us to use docstrings or embedded multi-line strings straight from our Python code while removing the formatting of the code itself.
+        The sample string has an artificial indent level introduced for illustrating this feature.</string>
+    <string name="others">Others</string>
+    <string name="no_internet">No Internet found. Check your connection or try again.</string>
+    <string name="termsofuses">Terms of uses</string>
+    <string name="accept">Accept</string>
+    <string name="terms"><![CDATA[T & C]]></string>
+    <string name="family">Family</string>
+    <string name="no_data_found">No Data Found....!</string>
+    <string name="activate_account">Activate your Streamly Account on your TV</string>
+    <string name="stay_text">Stay on this while you sign in on your phone or computer</string>
+    <string name="scan_qr">Scan this QR code</string>
+    <string name="text_qr_with_phone">Try using a phone camera or a QR code scanner</string>
+    <string name="open_link_browser">Open the link in a browser</string>
+    <string name="demo_link">streamly.co/tv/562888</string>
+
+</resources>

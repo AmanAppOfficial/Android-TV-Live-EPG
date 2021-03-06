@@ -1,0 +1,35 @@
+=> Updated xml files:-
+- activity_main
+- activity_search
+- activity_settings
+- dialog_profile_new
+- programguide_item_program
+- programguide_item_row
+- programguide_item_channel
+
+
+=> Updated drawable files:-
+- app_icon_tv
+- app_icon_topself
+- ic_search
+- ic_setting_icon
+- layout_focus2
+- resize_image
+- shape_of_channel_cell3
+- white_transparent2
+
+
+=> Updated values files:-
+- color.xml
+- dimens.xml
+- strings.xml
+- styles.xml
+
+=> Class under java package which are updated are mentioned with a comment "#neovifyissueresolved28sep" above it.
+=> Some images or icons are added in mipmap which might be used for self image.
+=> Also, check the AndroidManifest.xml as it is also updated.
+=> In build.gradle(App), 1 library is added  "implementation 'com.vlstr:blurdialog:1.0.0'" ,
+this is going to used for blur effect in dialogs.
+=> Only, Profile/Account dialog is changed & created with new library to add effect of blur.
+For other dialogs, we need to add same view & code for the same effect.
+

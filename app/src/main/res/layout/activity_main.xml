@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blur_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <!--    android:background="@drawable/person_singing"-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8ssp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.91"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/image_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:background="@drawable/options_states"
+                android:orientation="horizontal"
+                android:padding="@dimen/_2sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:background="@drawable/ic_search"
+                    android:textAlignment="center"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+<!--            //#neovifyissueresolved28sep-->
+<!--            <TextView-->
+<!--                android:id="@+id/text_all"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="@dimen/_8sdp"-->
+<!--                android:layout_marginRight="@dimen/_8sdp"-->
+<!--                android:background="@drawable/options_states"-->
+<!--                android:fontFamily="@font/helvetica_neue_medium"-->
+<!--                android:padding="@dimen/_2sdp"-->
+<!--                android:text="@string/all"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="@dimen/_8ssp" />-->
+
+<!--&lt;!&ndash;            //#neovifyissueresolved28sep&ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/text_others"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="@dimen/_8sdp"-->
+<!--                android:layout_marginRight="@dimen/_8sdp"-->
+<!--                android:background="@drawable/options_states"-->
+<!--                android:fontFamily="@font/helvetica_neue_medium"-->
+<!--                android:padding="@dimen/_2sdp"-->
+<!--                android:text="@string/others"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="@dimen/_8ssp" />-->
+
+<!--&lt;!&ndash;            //#neovifyissueresolved28sep&ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/text_family"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="@dimen/_8sdp"-->
+<!--                android:layout_marginRight="@dimen/_8sdp"-->
+<!--                android:background="@drawable/options_states"-->
+<!--                android:fontFamily="@font/helvetica_neue_medium"-->
+<!--                android:padding="@dimen/_2sdp"-->
+<!--                android:text="@string/family"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="@dimen/_8ssp" />-->
+
+<!--&lt;!&ndash;            //#neovifyissueresolved28sep&ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/text_sports"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="@dimen/_8sdp"-->
+<!--                android:layout_marginRight="@dimen/_8sdp"-->
+<!--                android:background="@drawable/options_states"-->
+<!--                android:fontFamily="@font/helvetica_neue_medium"-->
+<!--                android:padding="@dimen/_2sdp"-->
+<!--                android:text="@string/sports"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="@dimen/_8ssp" />-->
+
+<!--&lt;!&ndash;            //#neovifyissueresolved28sep&ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/text_news"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="@dimen/_8sdp"-->
+<!--                android:layout_marginRight="@dimen/_8sdp"-->
+<!--                android:background="@drawable/options_states"-->
+<!--                android:fontFamily="@font/helvetica_neue_medium"-->
+<!--                android:padding="@dimen/_2sdp"-->
+<!--                android:text="@string/news"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="@dimen/_8ssp" />-->
+
+<!--&lt;!&ndash;            //#neovifyissueresolved28sep&ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/text_comedy"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="@dimen/_8sdp"-->
+<!--                android:layout_marginRight="@dimen/_8sdp"-->
+<!--                android:background="@drawable/options_states"-->
+<!--                android:fontFamily="@font/helvetica_neue_medium"-->
+<!--                android:padding="@dimen/_2sdp"-->
+<!--                android:text="@string/comedy"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="@dimen/_8ssp" />-->
+
+<!--&lt;!&ndash;            //#neovifyissueresolved28sep&ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/text_movies"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="@dimen/_8sdp"-->
+<!--                android:layout_marginRight="@dimen/_8sdp"-->
+<!--                android:background="@drawable/options_states"-->
+<!--                android:fontFamily="@font/helvetica_neue_medium"-->
+<!--                android:padding="@dimen/_2sdp"-->
+<!--                android:text="@string/movies"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="@dimen/_8ssp" />-->
+
+<!--&lt;!&ndash;            //#neovifyissueresolved28sep&ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/text_kids"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="@dimen/_8sdp"-->
+<!--                android:layout_marginRight="@dimen/_8sdp"-->
+<!--                android:background="@drawable/options_states"-->
+<!--                android:fontFamily="@font/helvetica_neue_medium"-->
+<!--                android:padding="@dimen/_2sdp"-->
+<!--                android:text="@string/Kids"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textSize="@dimen/_8ssp" />-->
+
+<!--&lt;!&ndash;            //#neovifyissueresolved28sep&ndash;&gt;-->
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recycler_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/setting_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:background="@drawable/options_states"
+                android:fontFamily="@font/helvetica_neue_light"
+                android:padding="@dimen/_2sdp"
+                android:drawableLeft="@drawable/ic_setting_icon"
+                android:drawablePadding="10dp"
+                android:text="@string/settings"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="true"
+                android:textSize="@dimen/_9ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/go_back_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:background="@drawable/options_states"
+                android:drawableLeft="@drawable/ic_go_back"
+                android:padding="@dimen/_2sdp"
+                android:text=" Go Back"
+                android:visibility="gone"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="true"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_265sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:context=".MainActivity"
+            tools:deviceIds="tv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

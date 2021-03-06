@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blur_background"
+        tools:context=".search_channels.SearchActivity">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            android:theme="@style/appProgress"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--                android:visibility="gone"-->
+
+<!--            android:background="@drawable/white_border"-->
+            <LinearLayout
+                android:layout_width="860px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="80.5px"
+                android:layout_marginLeft="120.5px"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_6sdp"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/ed_search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.6"
+                    android:layout_margin="0dp"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:drawablePadding="10dp"
+                    android:hint=" Search Channels"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:textColor="@color/md_white_1000"
+                    android:textColorHint="#FF798588"
+                    android:textSize="@dimen/_12sdp" />
+<!--                android:layout_margin="@dimen/_3sdp"-->
+
+                <ImageView
+                    android:id="@+id/img_voice_search"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_weight="0.4"
+                    android:src="@drawable/ic_voice_search" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="860px"
+                android:layout_height="2px"
+                android:layout_gravity="start"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="120.5px"
+                android:background="#FF798588"
+                android:src="@drawable/ic_voice_search" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="12sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <requestFocus />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/view_search"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNoDataFound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data_found"
+                android:textAlignment="center"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_internet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_internet"
+                android:textAlignment="center"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+ </FrameLayout>

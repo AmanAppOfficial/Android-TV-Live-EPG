@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:drawable="@drawable/layout_border" /> <!-- pressed -->
+
+    <item android:state_focused="true"
+        android:drawable="@drawable/rectangle_focus" /> <!-- focused -->
+
+    <!--    <item android:state_hovered="true" android:drawable="@drawable/white_transparent" /> &lt;!&ndash; hovered &ndash;&gt;-->
+<!--    <item android:drawable="@drawable/edittext_outline" /> &lt;!&ndash; default &ndash;&gt;-->
+</selector>

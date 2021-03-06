@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@color/qrbackground"
+    tools:context=".QRCode.QRCodeActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/qrbackground"
+    tools:context=".QRCode.QRCodeActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="314px"
+        android:layout_height="78px"
+        android:layout_marginTop="36dp"
+        android:src="@mipmap/streamly_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="1067px"
+        android:layout_height="67px"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/helvetica_neue_medium"
+        android:text="@string/activate_account"
+        android:textColor="@color/md_white_1000"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="50px"
+        android:layout_height="67px"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/helvetica_neue_medium"
+        android:text="or"
+        android:textAlignment="center"
+        android:textColor="@color/md_white_1000"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="786px"
+        android:layout_height="384px"
+        android:layout_marginStart="99px"
+        android:layout_marginTop="389px"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/qr_code_rectangle">
+
+
+        <TextView
+            android:layout_width="380px"
+            android:layout_height="41px"
+            android:layout_marginStart="51px"
+            android:layout_marginTop="80px"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:text="@string/open_link_browser"
+            android:textColor="@color/md_white_1000"
+            android:textSize="31px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_link"
+            android:layout_width="wrap_content"
+            android:layout_height="67px"
+            android:layout_marginStart="51px"
+            android:layout_marginTop="213px"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:textColor="@color/md_white_1000"
+            android:textSize="60px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="786px"
+        android:layout_height="384px"
+        android:layout_marginTop="389px"
+        android:layout_marginEnd="99px"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/qr_code_rectangle">
+
+
+        <TextView
+            android:layout_width="277px"
+            android:layout_height="41px"
+            android:layout_marginStart="51px"
+            android:layout_marginTop="80px"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:text="@string/scan_qr"
+            android:textColor="@color/md_white_1000"
+            android:textSize="31px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_width="432px"
+            android:layout_height="92px"
+            android:layout_marginStart="51px"
+            android:layout_marginTop="213px"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:text="@string/text_qr_with_phone"
+            android:textColor="#CCFFFFFF"
+            android:textSize="31px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/img_qr_code"
+            android:layout_width="225px"
+            android:layout_height="225px"
+            android:src="@mipmap/streamly_logo"
+            android:layout_marginEnd="50px"
+            android:layout_marginTop="80px"
+            android:layout_marginBottom="79px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.398" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="974px"
+        android:layout_height="46px"
+        android:layout_marginLeft="473px"
+        android:layout_marginRight="473px"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/helvetica_neue_medium"
+        android:text="@string/stay_text"
+        android:textColor="#CCFFFFFF"
+        android:textSize="34px"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="@dimen/_6sdp"
+        android:minHeight="@dimen/_30sdp"
+        android:minWidth="@dimen/_60sdp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/progress_bar_color" />
+
+</FrameLayout>

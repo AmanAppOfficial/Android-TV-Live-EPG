@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:drawable="@drawable/layout_border" /> &lt;!&ndash; pressed &ndash;&gt;
+
+    <item android:state_focused="true"
+        android:drawable="@drawable/channel_white_border" /> &lt;!&ndash; focused &ndash;&gt;
+
+&lt;!&ndash;        <item android:drawable="@drawable/channel_white_border" /> &lt;!&ndash; default &ndash;&gt;&ndash;&gt;
+        <item android:drawable="@drawable/channel_grey_background" /> &lt;!&ndash; default &ndash;&gt;
+</selector>-->
+
+<!--////////////////////////////////////////////////-->
+
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true">
+        <shape>
+            <solid android:color="@color/programguide_channel_item_background_color_selected" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/programguide_channel_item_background_color_default" />
+        </shape>
+    </item>
+</selector>-->
+
+
+
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_activated="true"
+    android:drawable="@drawable/channel_white_border">
+</item>
+
+<item>
+    <shape>
+        <solid android:color="@color/md_grey_600" />
+    </shape>
+</item>
+</selector>

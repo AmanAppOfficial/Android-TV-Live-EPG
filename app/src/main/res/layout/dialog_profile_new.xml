@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="90dp"
+    android:paddingEnd="90dp"
+    android:orientation="vertical">
+
+    <com.vlstr.blurdialog.BlurDialog
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:id="@+id/blurView"
+        android:elevation="24dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:backgroundTint="#000000"
+        app:blurDialogTitle=""
+        app:blurDialogDuration="length_infinite"
+        android:layout_gravity="center"
+        android:visibility="visible">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_6sdp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:text="@string/username_profile"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/_10ssp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_name"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/helvetica_neue_medium"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="@dimen/_8ssp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/md_white_1000" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_6sdp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:text="@string/email"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/_10ssp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_email"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/helvetica_neue_medium"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="@dimen/_8ssp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/md_white_1000" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_6sdp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:text="@string/version"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/_10ssp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/helvetica_neue_medium"
+                        android:text="1.01"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="@dimen/_8ssp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/md_white_1000" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_6sdp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:text="@string/build_date"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/_10ssp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_updated_date"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/helvetica_neue_medium"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="@dimen/_8ssp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/md_white_1000" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/button_states"
+                android:elevation="@dimen/_6sdp"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:padding="@dimen/_2sdp"
+                android:text="@string/ok"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_8ssp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="@dimen/_6sdp"
+        android:indeterminateTint="@color/progress_bar_color"
+        android:minWidth="@dimen/_60sdp"
+        android:minHeight="@dimen/_30sdp"
+        android:visibility="gone" />
+
+    </com.vlstr.blurdialog.BlurDialog>
+</LinearLayout>
