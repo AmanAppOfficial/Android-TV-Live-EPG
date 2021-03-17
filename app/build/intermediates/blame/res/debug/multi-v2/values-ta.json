@@ -4,23 +4,6 @@
             "outputFile": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ta/values-ta.xml",
             "map": [
                 {
-                    "source": "/home/aman/.gradle/caches/transforms-2/files-2.1/2a59a6815b78709b2e98c90812686b57/core-1.5.0-beta02/res/values-ta/values-ta.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "110",
-                        "startColumns": "4",
-                        "startOffsets": "10522",
-                        "endColumns": "100",
-                        "endOffsets": "10618"
-                    }
-                },
-                {
                     "source": "/home/aman/.gradle/caches/transforms-2/files-2.1/8191c928441fa139f7138541eb991bd5/jetified-play-services-basement-17.0.0/res/values-ta/values.xml",
                     "from": {
                         "startLines": "4",
@@ -69,6 +52,23 @@
                         "startOffsets": "3096,3177,3263,3342,3414,3485,3550,3627,3719,3809,3901,3970,4050,4139,4226,4293,4361,4430,4503,4572,4642,4724,4806,4859,4922,4970,5031,5098,5163,5224,5293,5356,5419,5485,5548,5615,5669,5733,5811,5889",
                         "endColumns": "80,85,78,71,70,64,76,91,89,91,68,79,88,86,66,67,68,72,68,69,81,81,52,62,47,60,66,64,60,68,62,62,65,62,66,53,63,77,77,55",
                         "endOffsets": "3172,3258,3337,3409,3480,3545,3622,3714,3804,3896,3965,4045,4134,4221,4288,4356,4425,4498,4567,4637,4719,4801,4854,4917,4965,5026,5093,5158,5219,5288,5351,5414,5480,5543,5610,5664,5728,5806,5884,5940"
+                    }
+                },
+                {
+                    "source": "/home/aman/.gradle/caches/transforms-2/files-2.1/4ddb477860612dbd798b066a19906dd7/core-1.5.0-beta03/res/values-ta/values-ta.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "110",
+                        "startColumns": "4",
+                        "startOffsets": "10522",
+                        "endColumns": "100",
+                        "endOffsets": "10618"
                     }
                 },
                 {

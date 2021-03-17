@@ -8,11 +8,17 @@ import android.os.Handler;
 import android.provider.Settings;
 import android.text.format.Formatter;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.ExoPlayer;
@@ -43,9 +49,15 @@ import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory;
 import com.google.android.exoplayer2.upstream.HttpDataSource;
 import com.google.android.exoplayer2.util.Util;
 import com.google.firebase.analytics.FirebaseAnalytics;
+import com.streamly.TVApp.streamly.MainActivity;
 import com.streamly.TVApp.streamly.R;
+import com.streamly.TVApp.streamly.epg.ChannellistModel;
+import com.streamly.TVApp.streamly.epg.Datum;
+import com.streamly.TVApp.streamly.epg.GenereAdapter;
+import com.streamly.TVApp.streamly.epg.SimpleChannel;
 import com.streamly.TVApp.streamly.local_storage.TokenStorage;
 import com.streamly.TVApp.streamly.log_in.LogInActivity;
+import com.streamly.TVApp.streamly.playervideo.allchannel.AllChannelAdapter;
 import com.streamly.TVApp.streamly.playervideo.drm.DrmKeyModel;
 import com.streamly.TVApp.streamly.playervideo.drm.DrmViewModel;
 import com.streamly.TVApp.streamly.playervideo.geofence.GeofenceModel;
@@ -53,13 +65,21 @@ import com.streamly.TVApp.streamly.playervideo.geofence.GeofenceViewModel;
 import com.streamly.TVApp.streamly.playervideo.ip.IpModel;
 import com.streamly.TVApp.streamly.playervideo.ip.IpViewModel;
 import com.streamly.TVApp.streamly.playervideo.zipcode.ZipCodeDialog;
+import com.streamly.TVApp.streamly.retrofit_clients.ApiClient;
+import com.streamly.TVApp.streamly.retrofit_clients.ApiInterface;
 import com.streamly.TVApp.streamly.retrofit_clients.ApiResponse;
 import com.streamly.TVApp.streamly.utilities.CommonUtility;
 import com.streamly.TVApp.streamly.utilities.ConstantUtility;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class PlayerActivity extends FragmentActivity {
     private static final String TAG=PlayerActivity.class.getSimpleName();
@@ -69,9 +89,13 @@ public class PlayerActivity extends FragmentActivity {
     private FirebaseAnalytics mFirebaseAnalytics;
     Bundle params;
     Handler handler = new Handler();
-    final int delay = 15000; //milliseconds
+    final int delay = 15000; //millisecondsaddto
     Runnable runnable;
-
+    RecyclerView allChannelRecyclerView;
+    List<Datum> channelList;
+    AllChannelAdapter allChannelAdapter;
+    ImageView logoImage , menuImage , drawerCloseImage;
+    LinearLayout drawerLayout;
 
     @Override
     protected void onStart() {
@@ -101,6 +125,11 @@ public class PlayerActivity extends FragmentActivity {
         // Create player
         player = new SimpleExoPlayer.Builder(this).build();
         playerView = findViewById(R.id.playerView);
+        logoImage = findViewById(R.id.logo);
+        menuImage = findViewById(R.id.menu_icon);
+        drawerCloseImage = findViewById(R.id.drawer_close);
+        drawerLayout = findViewById(R.id.player_channel_frame);
+        allChannelRecyclerView = findViewById(R.id.player_channel_list);
         authToken= TokenStorage.readSharedToken(PlayerActivity.this, ConstantUtility.AUTH_TOKEN, null);
         userId= TokenStorage.readSharedToken(PlayerActivity.this, ConstantUtility.USER_ID, null);
         uniqueId = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
@@ -114,8 +143,33 @@ public class PlayerActivity extends FragmentActivity {
         params.putString("inside_geofence", "false");
         mFirebaseAnalytics.setUserId(userId);
 
+
+        menuImage.setOnClickListener(view -> {
+            menuImage.setVisibility(View.GONE);
+            drawerLayout.setVisibility(View.VISIBLE);
+        });
+
+
+        drawerCloseImage.setOnClickListener(view -> {
+            menuImage.setVisibility(View.VISIBLE);
+            drawerLayout.setVisibility(View.GONE);
+        });
+
+
          getLatLong();
     }
+
+
+    public void playNext(String channelN , String videoUrl){
+
+        Intent i = new Intent(this , PlayerActivity.class);
+        i.putExtra("from", videoUrl);
+        i.putExtra("channel_name", channelN);
+        startActivity(i);
+        finish();
+    }
+
+
 
     private void getLatLong() {
         WifiManager wm = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
@@ -200,7 +254,8 @@ public class PlayerActivity extends FragmentActivity {
                 switch (apiResponse.getResponseCode()){
                     case 200: String drmKey=drmKeyModel.getData();
                         String wvUrl= drmKeyModel.getWidevinelicense();
-                        initializePlayer(drmKey,wvUrl);
+                        //call all channel api....
+                        getChannelList(drmKey,wvUrl);
                         break;
                     case 401:
                         TokenStorage.clearSharedToken(PlayerActivity.this);
@@ -348,6 +403,12 @@ public class PlayerActivity extends FragmentActivity {
             public void onIsPlayingChanged(boolean isPlaying) {
 
                 if (isPlaying){
+
+
+//                    logoImage.setVisibility(View.VISIBLE);
+//                    menuImage.setVisibility(View.GONE);
+
+
                     mFirebaseAnalytics.logEvent("video_play", params);
 
                     runnable = new Runnable() {
@@ -360,6 +421,11 @@ public class PlayerActivity extends FragmentActivity {
                         }
                     };
                     handler.postDelayed(runnable, delay);
+                }
+                else{
+//                    logoImage.setVisibility(View.GONE);
+//                    menuImage.setVisibility(View.VISIBLE);
+
                 }
 
             }
@@ -420,4 +486,56 @@ public class PlayerActivity extends FragmentActivity {
         Log.e(TAG,"on_stop_called");
         player.stop();
     }
+
+    private void getChannelList(String drmKey, String wvUrl) {
+
+        ApiInterface apiInterface = ApiClient.getClient().create(ApiInterface.class);
+        Call<ChannellistModel> call = apiInterface.getChannelList("Bearer " + authToken);
+        call.enqueue(new Callback<ChannellistModel>() {
+            @Override
+            public void onResponse(Call<ChannellistModel> call, Response<ChannellistModel> response) {
+                try {
+
+                    if (response.isSuccessful() && response.body() != null) {
+
+                       channelList = response.body().getData();
+                       Log.e("channelList-------" , channelList.get(0).getUrl());
+
+
+                       allChannelRecyclerView.setLayoutManager(new LinearLayoutManager(PlayerActivity.this , LinearLayoutManager.VERTICAL , false));
+                       allChannelAdapter = new AllChannelAdapter(PlayerActivity.this , channelList);
+                       allChannelRecyclerView.setAdapter(allChannelAdapter);
+
+                       menuImage.setVisibility(View.VISIBLE);
+
+                        initializePlayer(drmKey , wvUrl);
+
+                    } else if (response.code() == 401) {
+                        CommonUtility.showToast(PlayerActivity.this, response.body().getMessage());
+
+                    } else if (response.code() == 404) {
+                        TokenStorage.clearSharedToken(PlayerActivity.this);
+                        CommonUtility.showToast(PlayerActivity.this, ConstantUtility.SESSION_EXPIRED);
+
+
+                    } else if (response.code() == 500) {
+                        CommonUtility.showToast(PlayerActivity.this, ConstantUtility.SERVER_ISSUE);
+
+                    }
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                    Log.e(TAG, "Exception " + ex);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ChannellistModel> call, Throwable t) {
+                Log.e(TAG, "failure: " + call + " " + t.getLocalizedMessage());
+                CommonUtility.showToast(PlayerActivity.this, ConstantUtility.SERVER_ISSUE);
+            }
+        });
+    }
+
+
+
 }

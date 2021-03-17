@@ -43,7 +43,7 @@
 24        android:allowBackup="false"
 24-->/home/aman/Desktop/streamly/streamly/app/src/main/AndroidManifest.xml:15:9-36
 25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-25-->[androidx.core:core:1.5.0-beta02] /home/aman/.gradle/caches/transforms-2/files-2.1/2a59a6815b78709b2e98c90812686b57/core-1.5.0-beta02/AndroidManifest.xml:24:18-86
+25-->[androidx.core:core:1.5.0-beta03] /home/aman/.gradle/caches/transforms-2/files-2.1/4ddb477860612dbd798b066a19906dd7/core-1.5.0-beta03/AndroidManifest.xml:24:18-86
 26        android:banner="@drawable/resized"
 26-->/home/aman/Desktop/streamly/streamly/app/src/main/AndroidManifest.xml:16:9-43
 27        android:debuggable="true"

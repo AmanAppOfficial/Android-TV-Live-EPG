@@ -38,6 +38,23 @@
                     }
                 },
                 {
+                    "source": "/home/aman/.gradle/caches/transforms-2/files-2.1/4ddb477860612dbd798b066a19906dd7/core-1.5.0-beta03/res/values-be/values-be.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "110",
+                        "startColumns": "4",
+                        "startOffsets": "10400",
+                        "endColumns": "100",
+                        "endOffsets": "10496"
+                    }
+                },
+                {
                     "source": "/home/aman/.gradle/caches/transforms-2/files-2.1/85c369933fb904d8076fc1c8452f77be/appcompat-1.2.0/res/values-be/values-be.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
@@ -69,23 +86,6 @@
                         "startOffsets": "5841,5948,6049,6149,6246,6374,6485,6582,6673,6803,6931,7040,7165,7323,7448,7571,7677,7768,7905,7999,8103,8214,8328,8425,8544,8669,8787,8903,9024,9150,9272,9406,9523,9652,9739,9822,9930,10070,10236",
                         "endColumns": "106,100,99,96,127,110,96,90,129,127,108,124,157,124,122,105,90,136,93,103,110,113,96,118,124,117,115,120,125,121,133,116,128,86,82,107,139,165,81",
                         "endOffsets": "5943,6044,6144,6241,6369,6480,6577,6668,6798,6926,7035,7160,7318,7443,7566,7672,7763,7900,7994,8098,8209,8323,8420,8539,8664,8782,8898,9019,9145,9267,9401,9518,9647,9734,9817,9925,10065,10231,10313"
-                    }
-                },
-                {
-                    "source": "/home/aman/.gradle/caches/transforms-2/files-2.1/2a59a6815b78709b2e98c90812686b57/core-1.5.0-beta02/res/values-be/values-be.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "110",
-                        "startColumns": "4",
-                        "startOffsets": "10400",
-                        "endColumns": "100",
-                        "endOffsets": "10496"
                     }
                 }
             ]

@@ -4,23 +4,6 @@
             "outputFile": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is/values-is.xml",
             "map": [
                 {
-                    "source": "/home/aman/.gradle/caches/transforms-2/files-2.1/2a59a6815b78709b2e98c90812686b57/core-1.5.0-beta02/res/values-is/values-is.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "110",
-                        "startColumns": "4",
-                        "startOffsets": "10025",
-                        "endColumns": "100",
-                        "endOffsets": "10121"
-                    }
-                },
-                {
                     "source": "/home/aman/.gradle/caches/transforms-2/files-2.1/8191c928441fa139f7138541eb991bd5/jetified-play-services-basement-17.0.0/res/values-is/values.xml",
                     "from": {
                         "startLines": "4",
@@ -69,6 +52,23 @@
                         "startOffsets": "5663,5770,5871,5966,6059,6180,6292,6389,6487,6613,6738,6842,6962,7109,7232,7354,7462,7551,7672,7762,7867,7975,8080,8181,8299,8409,8522,8634,8736,8842,8954,9069,9177,9288,9375,9458,9562,9698,9855",
                         "endColumns": "106,100,94,92,120,111,96,97,125,124,103,119,146,122,121,107,88,120,89,104,107,104,100,117,109,112,111,101,105,111,114,107,110,86,82,103,135,156,88",
                         "endOffsets": "5765,5866,5961,6054,6175,6287,6384,6482,6608,6733,6837,6957,7104,7227,7349,7457,7546,7667,7757,7862,7970,8075,8176,8294,8404,8517,8629,8731,8837,8949,9064,9172,9283,9370,9453,9557,9693,9850,9939"
+                    }
+                },
+                {
+                    "source": "/home/aman/.gradle/caches/transforms-2/files-2.1/4ddb477860612dbd798b066a19906dd7/core-1.5.0-beta03/res/values-is/values-is.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "110",
+                        "startColumns": "4",
+                        "startOffsets": "10025",
+                        "endColumns": "100",
+                        "endOffsets": "10121"
                     }
                 },
                 {

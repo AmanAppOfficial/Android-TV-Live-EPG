@@ -2496,6 +2496,7 @@ drawable button_press
 drawable button_states
 drawable channel_grey_background
 drawable channel_white_border
+drawable close
 drawable dialog_background
 drawable edittext_outline
 drawable edittext_states
@@ -2607,6 +2608,8 @@ drawable lb_text_dot_one
 drawable lb_text_dot_one_small
 drawable lb_text_dot_two
 drawable lb_text_dot_two_small
+drawable menu_channel
+drawable menu_two
 drawable mtv
 drawable notification_action_background
 drawable notification_bg
@@ -2620,7 +2623,10 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable option_channel_default
+drawable option_channels
 drawable option_default
+drawable option_focus_channel
 drawable option_foucs
 drawable option_press
 drawable options_states
@@ -2799,6 +2805,7 @@ id buttonPanel
 id button_start
 id cache_measures
 id cancel_action
+id card
 id center
 id center_horizontal
 id center_vertical
@@ -2864,6 +2871,7 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
+id drawer_close
 id dummy
 id easeIn
 id easeInOut
@@ -3048,6 +3056,7 @@ id mediaListHeader
 id mediaRowSelector
 id mediaRowSeparator
 id media_actions
+id menu_icon
 id message
 id message_text
 id middle
@@ -3081,6 +3090,10 @@ id playback_fragment_background
 id playback_fragment_root
 id playback_progress
 id playerView
+id player_channel_frame
+id player_channel_image
+id player_channel_list
+id player_channel_text
 id playing
 id poptext
 id position
@@ -3421,6 +3434,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout player_all_channel_row
 layout programguide_fragment
 layout programguide_item_channel
 layout programguide_item_filter

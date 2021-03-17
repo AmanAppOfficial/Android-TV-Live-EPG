@@ -4,23 +4,6 @@
             "outputFile": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml",
             "map": [
                 {
-                    "source": "/home/aman/.gradle/caches/transforms-2/files-2.1/2a59a6815b78709b2e98c90812686b57/core-1.5.0-beta02/res/values-ky/values-ky.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "110",
-                        "startColumns": "4",
-                        "startOffsets": "10310",
-                        "endColumns": "100",
-                        "endOffsets": "10406"
-                    }
-                },
-                {
                     "source": "/home/aman/.gradle/caches/transforms-2/files-2.1/8191c928441fa139f7138541eb991bd5/jetified-play-services-basement-17.0.0/res/values-ky/values.xml",
                     "from": {
                         "startLines": "4",
@@ -69,6 +52,23 @@
                         "startOffsets": "5840,5947,6048,6145,6238,6370,6482,6581,6672,6803,6934,7039,7160,7325,7448,7571,7679,7770,7899,7988,8094,8205,8312,8410,8525,8643,8759,8875,8990,9109,9229,9346,9460,9575,9662,9745,9849,9983,10138",
                         "endColumns": "106,100,96,92,131,111,98,90,130,130,104,120,164,122,122,107,90,128,88,105,110,106,97,114,117,115,115,114,118,119,116,113,114,86,82,103,133,154,89",
                         "endOffsets": "5942,6043,6140,6233,6365,6477,6576,6667,6798,6929,7034,7155,7320,7443,7566,7674,7765,7894,7983,8089,8200,8307,8405,8520,8638,8754,8870,8985,9104,9224,9341,9455,9570,9657,9740,9844,9978,10133,10223"
+                    }
+                },
+                {
+                    "source": "/home/aman/.gradle/caches/transforms-2/files-2.1/4ddb477860612dbd798b066a19906dd7/core-1.5.0-beta03/res/values-ky/values-ky.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "110",
+                        "startColumns": "4",
+                        "startOffsets": "10310",
+                        "endColumns": "100",
+                        "endOffsets": "10406"
                     }
                 },
                 {

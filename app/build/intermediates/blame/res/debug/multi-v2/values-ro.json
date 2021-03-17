@@ -4,6 +4,23 @@
             "outputFile": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ro/values-ro.xml",
             "map": [
                 {
+                    "source": "/home/aman/.gradle/caches/transforms-2/files-2.1/4ddb477860612dbd798b066a19906dd7/core-1.5.0-beta03/res/values-ro/values-ro.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "110",
+                        "startColumns": "4",
+                        "startOffsets": "10437",
+                        "endColumns": "100",
+                        "endOffsets": "10533"
+                    }
+                },
+                {
                     "source": "/home/aman/.gradle/caches/transforms-2/files-2.1/8191c928441fa139f7138541eb991bd5/jetified-play-services-basement-17.0.0/res/values-ro/values.xml",
                     "from": {
                         "startLines": "4",
@@ -69,23 +86,6 @@
                         "startOffsets": "5873,5980,6081,6181,6279,6407,6521,6620,6713,6843,6969,7084,7218,7383,7512,7637,7747,7844,7976,8067,8172,8275,8379,8481,8603,8717,8849,8977,9093,9214,9331,9454,9566,9684,9771,9856,9963,10099,10257",
                         "endColumns": "106,100,99,97,127,113,98,92,129,125,114,133,164,128,124,109,96,131,90,104,102,103,101,121,113,131,127,115,120,116,122,111,117,86,84,106,135,157,95",
                         "endOffsets": "5975,6076,6176,6274,6402,6516,6615,6708,6838,6964,7079,7213,7378,7507,7632,7742,7839,7971,8062,8167,8270,8374,8476,8598,8712,8844,8972,9088,9209,9326,9449,9561,9679,9766,9851,9958,10094,10252,10348"
-                    }
-                },
-                {
-                    "source": "/home/aman/.gradle/caches/transforms-2/files-2.1/2a59a6815b78709b2e98c90812686b57/core-1.5.0-beta02/res/values-ro/values-ro.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "110",
-                        "startColumns": "4",
-                        "startOffsets": "10437",
-                        "endColumns": "100",
-                        "endOffsets": "10533"
                     }
                 }
             ]

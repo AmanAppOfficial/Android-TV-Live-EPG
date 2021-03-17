@@ -8,6 +8,10 @@
         "source": "/home/aman/Desktop/streamly/streamly/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/res/merged/debug/drawable_close.xml.flat",
+        "source": "/home/aman/Desktop/streamly/streamly/app/src/main/res/drawable/close.xml"
+    },
+    {
         "merged": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/res/merged/debug/drawable-mdpi_app_topself.png.flat",
         "source": "/home/aman/Desktop/streamly/streamly/app/src/main/res/drawable-mdpi/app_topself.png"
     },
@@ -256,6 +260,10 @@
         "source": "/home/aman/Desktop/streamly/streamly/app/src/main/res/drawable/options_states.xml"
     },
     {
+        "merged": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/res/merged/debug/drawable_option_channel_default.xml.flat",
+        "source": "/home/aman/Desktop/streamly/streamly/app/src/main/res/drawable/option_channel_default.xml"
+    },
+    {
         "merged": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/res/merged/debug/drawable-xhdpi_resized.png.flat",
         "source": "/home/aman/Desktop/streamly/streamly/app/src/main/res/drawable-xhdpi/resized.png"
     },
@@ -274,6 +282,14 @@
     {
         "merged": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/res/merged/debug/drawable-hdpi_app_topself.png.flat",
         "source": "/home/aman/Desktop/streamly/streamly/app/src/main/res/drawable-hdpi/app_topself.png"
+    },
+    {
+        "merged": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/res/merged/debug/drawable_menu_channel.xml.flat",
+        "source": "/home/aman/Desktop/streamly/streamly/app/src/main/res/drawable/menu_channel.xml"
+    },
+    {
+        "merged": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/res/merged/debug/drawable_option_focus_channel.xml.flat",
+        "source": "/home/aman/Desktop/streamly/streamly/app/src/main/res/drawable/option_focus_channel.xml"
     },
     {
         "merged": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/res/merged/debug/drawable_button_press.xml.flat",
@@ -362,6 +378,10 @@
     {
         "merged": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/res/merged/debug/layout_activity_player.xml.flat",
         "source": "/home/aman/Desktop/streamly/streamly/app/src/main/res/layout/activity_player.xml"
+    },
+    {
+        "merged": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/res/merged/debug/drawable_option_channels.xml.flat",
+        "source": "/home/aman/Desktop/streamly/streamly/app/src/main/res/drawable/option_channels.xml"
     },
     {
         "merged": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_settings_resized.png.flat",
@@ -480,6 +500,10 @@
         "source": "/home/aman/Desktop/streamly/streamly/app/src/main/res/drawable/white_border.xml"
     },
     {
+        "merged": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/res/merged/debug/layout_player_all_channel_row.xml.flat",
+        "source": "/home/aman/Desktop/streamly/streamly/app/src/main/res/layout/player_all_channel_row.xml"
+    },
+    {
         "merged": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/res/merged/debug/layout_dialog_privacy.xml.flat",
         "source": "/home/aman/Desktop/streamly/streamly/app/src/main/res/layout/dialog_privacy.xml"
     },
@@ -538,6 +562,10 @@
     {
         "merged": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/res/merged/debug/drawable-ldpi_app_icon_tv.png.flat",
         "source": "/home/aman/Desktop/streamly/streamly/app/src/main/res/drawable-ldpi/app_icon_tv.png"
+    },
+    {
+        "merged": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/res/merged/debug/drawable_menu_two.png.flat",
+        "source": "/home/aman/Desktop/streamly/streamly/app/src/main/res/drawable/menu_two.png"
     },
     {
         "merged": "/home/aman/Desktop/streamly/streamly/app/build/intermediates/res/merged/debug/layout_activity_log_in.xml.flat",
